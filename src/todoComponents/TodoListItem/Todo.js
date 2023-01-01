@@ -7,7 +7,7 @@ const TodoWrap = styled.li`
   border-bottom: 1.5px dashed #333;
   width: 290px;
   height: 60px;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -15,9 +15,14 @@ const TodoWrap = styled.li`
   margin-bottom: 10px;
   box-sizing: border-box;
 
+  &::-webkit-scrollbar{height: 8px;}
+  &::-webkit-scrollbar-thumb{background: rgb(179 235 158); border-radius: 10px;}
+  &::-webkit-scrollbar-track{background-color: rgb(89 201 47);}
+
   &:hover{
     background-color: rgba(134, 200, 99, 0.3);
     border: none;
+    overflow-x:scroll;
   }
 
   & > p{

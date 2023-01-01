@@ -5,7 +5,13 @@ import Todo from './TodoListItem/Todo'
 import TodoDate from './TodoListItem/TodoDate'
 
 const TodoListContainer = styled.div`
-overflow-y: scroll;
+  overflow-x:hidden;
+
+  &::-webkit-scrollbar{width: 9px; height: 310px;}
+  &::-webkit-scrollbar-thumb{background: rgb(179 235 158);}
+  &::-webkit-scrollbar-track{background-color: rgba(134,200,99,0.3);}
+
+  &:hover{overflow-y: scroll;}
   &:nth-child(1)>div.dateContainer{
     background-color: rgb(134, 200, 99);
   }

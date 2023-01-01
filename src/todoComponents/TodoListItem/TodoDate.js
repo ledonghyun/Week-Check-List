@@ -16,10 +16,10 @@ const TodoDateContainer = styled.div`
     margin: 0;
     border: 1px solid black;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     text-align: center;
-    line-height: 60px;
+    line-height: 70px;
     font-size: 20px;
     background-color: white;
   }
